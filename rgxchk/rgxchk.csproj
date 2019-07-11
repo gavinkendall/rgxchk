@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormMatches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMatches.Designer.cs">
+      <DependentUpon>FormMatches.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,38 +58,41 @@
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="FormManager.cs" />
-    <Compile Include="FormPattern.cs">
+    <Compile Include="FormRegexPattern.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPattern.Designer.cs">
-      <DependentUpon>FormPattern.cs</DependentUpon>
+    <Compile Include="FormRegexPattern.Designer.cs">
+      <DependentUpon>FormRegexPattern.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSample.cs">
+    <Compile Include="FormDataInput.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSample.Designer.cs">
-      <DependentUpon>FormSample.cs</DependentUpon>
+    <Compile Include="FormDataInput.Designer.cs">
+      <DependentUpon>FormDataInput.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMatches.cs">
+    <Compile Include="FormGroupedMatches.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMatches.Designer.cs">
-      <DependentUpon>FormMatches.cs</DependentUpon>
+    <Compile Include="FormGroupedMatches.Designer.cs">
+      <DependentUpon>FormGroupedMatches.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInput.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMatches.resx">
+      <DependentUpon>FormMatches.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPattern.resx">
-      <DependentUpon>FormPattern.cs</DependentUpon>
+    <EmbeddedResource Include="FormRegexPattern.resx">
+      <DependentUpon>FormRegexPattern.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSample.resx">
-      <DependentUpon>FormSample.cs</DependentUpon>
+    <EmbeddedResource Include="FormDataInput.resx">
+      <DependentUpon>FormDataInput.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMatches.resx">
-      <DependentUpon>FormMatches.cs</DependentUpon>
+    <EmbeddedResource Include="FormGroupedMatches.resx">
+      <DependentUpon>FormGroupedMatches.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

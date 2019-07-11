@@ -3,19 +3,19 @@
     using System;
     using System.Windows.Forms;
 
-    public partial class FormPattern : Form
+    public partial class FormRegexPattern : Form
     {
-        public FormPattern()
+        public FormRegexPattern()
         {
             InitializeComponent();
         }
 
-        private void FormPattern_Load(object sender, EventArgs e)
+        private void FormRegexPattern_Load(object sender, EventArgs e)
         {
             textBoxPattern.Text = Properties.Settings.Default.Pattern;
         }
 
-        private void FormPattern_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormRegexPattern_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
         }
@@ -27,7 +27,8 @@
 
             UserInput.Pattern = textBoxPattern.Text;
 
-            FormManager.Match.UpdateMatches();
+            FormManager.Matches.UpdateMatches();
+            FormManager.GroupedMatches.UpdateMatches();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace rgxchk
 {
-    partial class FormPattern
+    partial class FormDataInput
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxPattern = new System.Windows.Forms.TextBox();
+            this.textBoxSample = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBoxPattern
+            // textBoxSample
             // 
-            this.textBoxPattern.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textBoxSample.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxPattern.Location = new System.Drawing.Point(14, 14);
-            this.textBoxPattern.Multiline = true;
-            this.textBoxPattern.Name = "textBoxPattern";
-            this.textBoxPattern.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxPattern.Size = new System.Drawing.Size(336, 204);
-            this.textBoxPattern.TabIndex = 0;
-            this.textBoxPattern.WordWrap = false;
-            this.textBoxPattern.TextChanged += new System.EventHandler(this.textBoxPattern_TextChanged);
+            this.textBoxSample.Location = new System.Drawing.Point(14, 14);
+            this.textBoxSample.MaxLength = 999999999;
+            this.textBoxSample.Multiline = true;
+            this.textBoxSample.Name = "textBoxSample";
+            this.textBoxSample.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBoxSample.Size = new System.Drawing.Size(336, 204);
+            this.textBoxSample.TabIndex = 0;
+            this.textBoxSample.TabStop = false;
+            this.textBoxSample.WordWrap = false;
+            this.textBoxSample.TextChanged += new System.EventHandler(this.textBoxSample_TextChanged);
             // 
-            // FormPattern
+            // FormDataInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(365, 232);
-            this.Controls.Add(this.textBoxPattern);
+            this.Controls.Add(this.textBoxSample);
             this.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MinimumSize = new System.Drawing.Size(381, 39);
-            this.Name = "FormPattern";
+            this.Name = "FormDataInput";
             this.ShowInTaskbar = false;
-            this.Text = "Pattern";
+            this.Text = "Data Input";
             this.TopMost = true;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormPattern_FormClosing);
-            this.Load += new System.EventHandler(this.FormPattern_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormDataInput_FormClosing);
+            this.Load += new System.EventHandler(this.FormDataInput_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -67,7 +69,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxPattern;
+        private System.Windows.Forms.TextBox textBoxSample;
     }
 }
-

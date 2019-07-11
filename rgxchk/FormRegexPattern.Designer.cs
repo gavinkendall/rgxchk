@@ -1,6 +1,6 @@
 ﻿namespace rgxchk
 {
-    partial class FormMatches
+    partial class FormRegexPattern
     {
         /// <summary>
         /// Required designer variable.
@@ -28,39 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxMatches = new System.Windows.Forms.TextBox();
+            this.textBoxPattern = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBoxMatches
+            // textBoxPattern
             // 
-            this.textBoxMatches.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textBoxPattern.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxMatches.Location = new System.Drawing.Point(14, 14);
-            this.textBoxMatches.Multiline = true;
-            this.textBoxMatches.Name = "textBoxMatches";
-            this.textBoxMatches.ReadOnly = true;
-            this.textBoxMatches.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxMatches.Size = new System.Drawing.Size(336, 204);
-            this.textBoxMatches.TabIndex = 1;
-            this.textBoxMatches.TabStop = false;
-            this.textBoxMatches.WordWrap = false;
+            this.textBoxPattern.Location = new System.Drawing.Point(14, 14);
+            this.textBoxPattern.Multiline = true;
+            this.textBoxPattern.Name = "textBoxPattern";
+            this.textBoxPattern.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBoxPattern.Size = new System.Drawing.Size(336, 204);
+            this.textBoxPattern.TabIndex = 0;
+            this.textBoxPattern.TabStop = false;
+            this.textBoxPattern.WordWrap = false;
+            this.textBoxPattern.TextChanged += new System.EventHandler(this.textBoxPattern_TextChanged);
             // 
-            // FormMatches
+            // FormRegexPattern
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(365, 232);
-            this.Controls.Add(this.textBoxMatches);
+            this.Controls.Add(this.textBoxPattern);
             this.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MinimumSize = new System.Drawing.Size(381, 39);
-            this.Name = "FormMatches";
+            this.Name = "FormRegexPattern";
             this.ShowInTaskbar = false;
-            this.Text = "Matches";
+            this.Text = "Regex Pattern";
             this.TopMost = true;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMatches_FormClosing);
-            this.Load += new System.EventHandler(this.FormMatches_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormRegexPattern_FormClosing);
+            this.Load += new System.EventHandler(this.FormRegexPattern_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -68,6 +68,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxMatches;
+        private System.Windows.Forms.TextBox textBoxPattern;
     }
 }
+

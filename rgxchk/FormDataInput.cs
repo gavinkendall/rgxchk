@@ -3,19 +3,19 @@
     using System;
     using System.Windows.Forms;
 
-    public partial class FormSample : Form
+    public partial class FormDataInput : Form
     {
-        public FormSample()
+        public FormDataInput()
         {
             InitializeComponent();
         }
 
-        private void FormSample_Load(object sender, EventArgs e)
+        private void FormDataInput_Load(object sender, EventArgs e)
         {
             textBoxSample.Text = Properties.Settings.Default.Sample;
         }
 
-        private void FormSample_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormDataInput_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
         }
@@ -27,7 +27,8 @@
 
             UserInput.Sample = textBoxSample.Text;
 
-            FormManager.Match.UpdateMatches();
+            FormManager.Matches.UpdateMatches();
+            FormManager.GroupedMatches.UpdateMatches();
         }
     }
 }

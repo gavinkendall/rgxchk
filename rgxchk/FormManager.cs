@@ -2,19 +2,22 @@
 {
     public static class FormManager
     {
-        public static FormPattern Pattern { get; set; }
-        public static FormSample Sample { get; set; }
-        public static FormMatches Match { get; set; }
+        public static FormRegexPattern RegexPattern { get; set; }
+        public static FormDataInput DataSample { get; set; }
+        public static FormMatches Matches { get; set; }
+        public static FormGroupedMatches GroupedMatches { get; set; }
 
         public static void Initialize()
         {
-            Pattern = new FormPattern();
-            Sample = new FormSample();
-            Match = new FormMatches();
+            RegexPattern = new FormRegexPattern();
+            DataSample = new FormDataInput();
+            Matches = new FormMatches();
+            GroupedMatches = new FormGroupedMatches();
 
-            Pattern.Show();
-            Sample.Show();
-            Match.Show();
+            RegexPattern.Show();
+            DataSample.Show();
+            Matches.Show();
+            GroupedMatches.Show();
         }
     }
 }

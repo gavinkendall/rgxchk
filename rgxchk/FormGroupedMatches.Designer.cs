@@ -1,6 +1,6 @@
 ﻿namespace rgxchk
 {
-    partial class FormSample
+    partial class FormGroupedMatches
     {
         /// <summary>
         /// Required designer variable.
@@ -28,45 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxSample = new System.Windows.Forms.TextBox();
+            this.treeViewMatches = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
-            // textBoxSample
+            // treeViewMatches
             // 
-            this.textBoxSample.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.treeViewMatches.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSample.Location = new System.Drawing.Point(14, 14);
-            this.textBoxSample.Multiline = true;
-            this.textBoxSample.Name = "textBoxSample";
-            this.textBoxSample.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxSample.Size = new System.Drawing.Size(336, 204);
-            this.textBoxSample.TabIndex = 0;
-            this.textBoxSample.WordWrap = false;
-            this.textBoxSample.TextChanged += new System.EventHandler(this.textBoxSample_TextChanged);
+            this.treeViewMatches.Location = new System.Drawing.Point(14, 14);
+            this.treeViewMatches.Name = "treeViewMatches";
+            this.treeViewMatches.Size = new System.Drawing.Size(336, 204);
+            this.treeViewMatches.TabIndex = 0;
+            this.treeViewMatches.TabStop = false;
             // 
-            // FormSample
+            // FormGroupedMatches
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(365, 232);
-            this.Controls.Add(this.textBoxSample);
+            this.Controls.Add(this.treeViewMatches);
             this.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MinimumSize = new System.Drawing.Size(381, 39);
-            this.Name = "FormSample";
+            this.Name = "FormGroupedMatches";
             this.ShowInTaskbar = false;
-            this.Text = "Sample";
+            this.Text = "Grouped Matches";
             this.TopMost = true;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormSample_FormClosing);
-            this.Load += new System.EventHandler(this.FormSample_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormGroupedMatches_FormClosing);
+            this.Load += new System.EventHandler(this.FormGroupedMatches_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxSample;
+        private System.Windows.Forms.TreeView treeViewMatches;
     }
 }
